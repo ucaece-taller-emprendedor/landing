@@ -1,6 +1,6 @@
-# Taller Emprendedor · UCAECE · 2026 2C
+# Taller Emprendedor · UCAECE · 2do cuatrimestre 2026
 
-Sitio de presentación de la materia **Taller Emprendedor** (Universidad CAECE, Mar del Plata), cohorte 2026 2C, con accesos directos a cada startup.
+Sitio de presentación de la materia **Taller Emprendedor** (Universidad CAECE, Mar del Plata), 2do cuatrimestre 2026, con accesos directos a cada startup.
 
 Es un sitio estático (HTML y CSS, sin dependencias) publicado con GitHub Pages.
 
