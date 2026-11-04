@@ -21,6 +21,18 @@ Para sumar una startup (por ejemplo KIVA cuando esté lista), duplicá una `<art
 - Consentimiento de los alumnos para publicar sus nombres. Hoy el sitio muestra solo sus usuarios de GitHub.
 - Dominio definitivo del sitio (hoy `github.io`).
 
+## Fotos de los integrantes
+
+Las fotos viven en `fotos/<startup>/apellido_nombre.webp` (WebP de 192×192, carga diferida). Si una foto no está, la tarjeta muestra un avatar con las iniciales y el color de la startup.
+
+Para sumar o cambiar fotos:
+
+1. Copiá el `.jpg` con el nombre `apellido_nombre.jpg` en la carpeta de la startup (por ejemplo `licity/basaldella_celeste.jpg`).
+2. Corré `scripts/optimizar-fotos.sh <carpeta_de_origen>` para convertirlas a WebP.
+3. Hacé commit y push.
+
+Solo se publican en este repo: no van en los repos de las apps.
+
 ## Identidad visual y logos
 
 - Paleta tomada de https://www.ucaecemdp.edu.ar: turquesa `#00a9af`, celeste `#aae7ec` y grises neutros. Para texto y botones se usa un turquesa más oscuro (`#007a7f`) que cumple contraste AA.
