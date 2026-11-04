@@ -279,3 +279,11 @@ h2 { margin: 0 0 8px; font-size: clamp(1.5rem, 4vw, 2rem); letter-spacing: -0.01
   html { scroll-behavior: auto; }
   .boton { transition: none; }
 }
+
+/* Páginas legales */
+.legal { padding-top: 32px; padding-bottom: 48px; max-width: 760px; }
+.legal h1 { font-size: clamp(1.7rem, 5vw, 2.3rem); margin-bottom: 8px; }
+.legal h2 { font-size: 1.15rem; margin: 28px 0 8px; }
+.legal p, .legal li { color: var(--texto-suave); }
+.legal ul { padding-left: 20px; }
+.legal a { text-decoration: underline; text-underline-offset: 2px; }
