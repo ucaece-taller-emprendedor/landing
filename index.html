@@ -3,12 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#00a9af">
   <title>Taller Emprendedor · UCAECE · 2do cuatrimestre 2026</title>
-  <meta name="description" content="Taller Emprendedor de la Universidad CAECE (Mar del Plata), 2do cuatrimestre 2026: cinco equipos de alumnos construyeron el MVP de su startup.">
+  <meta name="description" content="Taller Emprendedor de la Universidad CAECE (sede Mar del Plata), 2do cuatrimestre 2026: equipos de alumnos construyeron el MVP de su startup.">
   <meta property="og:title" content="Taller Emprendedor · UCAECE · 2do cuatrimestre 2026">
-  <meta property="og:description" content="Cinco startups, cinco MVPs: del problema al pitch.">
+  <meta property="og:description" content="Taller Emprendedor de la Universidad CAECE (sede Mar del Plata), 2do cuatrimestre 2026: equipos de alumnos construyeron el MVP de su startup.">
   <meta property="og:type" content="website">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231f3a5f'/%3E%3Cpath d='M9 22l7-12 7 12z' fill='%23f2b134'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2300a9af'/%3E%3Cpath d='M9 22l7-12 7 12z' fill='%23fff'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,11 +17,14 @@
 
   <header class="barra">
     <div class="contenedor barra-interna">
-      <a class="marca" href="#inicio" aria-label="Taller Emprendedor, inicio">
-        <span class="marca-icono" aria-hidden="true"></span>
-        <span>Taller Emprendedor</span>
+      <a class="marca" href="#inicio" aria-label="Universidad CAECE · Taller Emprendedor, inicio">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="logos/logo_caece.png">
+          <img src="logos/logo_caece2.png" alt="Universidad CAECE" width="130" height="38">
+        </picture>
+        <span class="marca-texto">Taller Emprendedor</span>
       </a>
-      <nav aria-label="Secciones">
+      <nav class="menu" aria-label="Secciones">
         <a href="#metodologia">Metodología</a>
         <a href="#startups">Startups</a>
         <a href="#docentes">Docentes</a>
@@ -31,7 +35,7 @@
   <main id="inicio">
     <section class="hero">
       <div class="contenedor">
-        <p class="etiqueta">Universidad CAECE · Mar del Plata · 2do cuatrimestre 2026</p>
+        <p class="etiqueta">Universidad CAECE · Sede Mar del Plata · 2do cuatrimestre 2026</p>
         <h1>De un problema real a una startup que funciona.</h1>
         <p class="bajada">
           En el Taller Emprendedor, equipos de alumnos de Administración detectaron un problema,
@@ -51,22 +55,22 @@
         <p class="intro">Cuatro pasos, en orden. Cada equipo recorre el mismo camino con su propia idea.</p>
         <ol class="pasos">
           <li>
-            <span class="paso-num">1</span>
+            <span class="paso-num" aria-hidden="true">1</span>
             <h3>Problema</h3>
             <p>Identificar un dolor concreto de personas o empresas, y poder explicarlo en una frase.</p>
           </li>
           <li>
-            <span class="paso-num">2</span>
+            <span class="paso-num" aria-hidden="true">2</span>
             <h3>Validación</h3>
             <p>Salir a hablar con usuarios y clientes para confirmar que el problema existe y importa.</p>
           </li>
           <li>
-            <span class="paso-num">3</span>
+            <span class="paso-num" aria-hidden="true">3</span>
             <h3>MVP</h3>
             <p>Construir la versión mínima que permite probar la solución, usando herramientas de IA.</p>
           </li>
           <li>
-            <span class="paso-num">4</span>
+            <span class="paso-num" aria-hidden="true">4</span>
             <h3>Pitch</h3>
             <p>Contar la historia del proyecto con datos, demo y un pedido claro.</p>
           </li>
@@ -78,59 +82,67 @@
       <div class="contenedor">
         <h2>Las startups</h2>
         <p class="intro">Cada proyecto tiene su app publicada. Las apps son demostraciones académicas con datos de ejemplo.</p>
-
         <div class="tarjetas">
-
-          <article class="tarjeta" id="startup-5022">
-            <p class="tarjeta-tag">Deporte · Mar del Plata</p>
-            <h3>5022</h3>
-            <p class="frase">Todo el rugby marplatense, en un solo lugar.</p>
-            <p class="problema"><strong>Problema:</strong> los resultados, fixtures y estadísticas del rugby local están dispersos y no hay un lugar único para aficionados, clubes y la Unión.</p>
-            <div class="tarjeta-botones">
-              <a class="boton boton-primario" href="https://5022.vercel.app">Ver app</a>
+        <article class="tarjeta" id="startup-5022" style="--startup:#c7f36b;--sobre-startup:#0c1912">
+          <header class="tarjeta-cabecera">
+            <img class="logo-startup" src="logos/5022-mark.svg" alt="" width="48" height="48" loading="lazy" decoding="async">
+            <div>
+              <p class="tarjeta-tag">Deporte · Mar del Plata</p>
+              <h3>5022</h3>
             </div>
-          </article>
-
-          <article class="tarjeta" id="startup-confix">
-            <p class="tarjeta-tag">Servicios para el hogar</p>
-            <h3>Confix</h3>
-            <p class="frase">Profesionales del hogar en los que podés confiar.</p>
-            <p class="problema"><strong>Problema:</strong> contratar a un plomero, electricista o pintor confiable es difícil: faltan referencias y es complicado comparar precios.</p>
-            <div class="tarjeta-botones">
-              <a class="boton boton-primario" href="https://confix-seven.vercel.app">Ver app</a>
+          </header>
+          <p class="frase">Todo el rugby marplatense, en un solo lugar.</p>
+          <p class="problema"><strong>Problema:</strong> los resultados, fixtures y estadísticas del rugby local están dispersos y no hay un lugar único para aficionados, clubes y la Unión.</p>
+          <div class="tarjeta-botones"><a class="boton boton-primario" href="https://5022.vercel.app">Ver app<span class="sr-only"> de 5022</span></a></div>
+        </article>
+        <article class="tarjeta" id="startup-confix" style="--startup:#7c3aed;--sobre-startup:#ffffff">
+          <header class="tarjeta-cabecera">
+            <img class="logo-startup" src="logos/confix-mark.svg" alt="" width="48" height="48" loading="lazy" decoding="async">
+            <div>
+              <p class="tarjeta-tag">Servicios para el hogar</p>
+              <h3>Confix</h3>
             </div>
-          </article>
-
-          <article class="tarjeta" id="startup-licity">
-            <p class="tarjeta-tag">Construcción · B2B</p>
-            <h3>Licity</h3>
-            <p class="frase">Licitá tu obra y pagá por etapas, con fondos protegidos.</p>
-            <p class="problema"><strong>Problema:</strong> las PyMEs no tienen una forma ordenada y segura de licitar obras, y los contratistas no ven las oportunidades.</p>
-            <div class="tarjeta-botones">
-              <a class="boton boton-primario" href="https://licity-five.vercel.app">Ver app</a>
+          </header>
+          <p class="frase">Profesionales del hogar en los que podés confiar.</p>
+          <p class="problema"><strong>Problema:</strong> contratar a un plomero, electricista o pintor confiable es difícil: faltan referencias y es complicado comparar precios.</p>
+          <div class="tarjeta-botones"><a class="boton boton-primario" href="https://confix-seven.vercel.app">Ver app<span class="sr-only"> de Confix</span></a></div>
+        </article>
+        <article class="tarjeta" id="startup-licity" style="--startup:#ce4c32;--sobre-startup:#ffffff">
+          <header class="tarjeta-cabecera">
+            <img class="logo-startup" src="logos/licity-mark.svg" alt="" width="48" height="48" loading="lazy" decoding="async">
+            <div>
+              <p class="tarjeta-tag">Construcción · B2B</p>
+              <h3>Licity</h3>
             </div>
-          </article>
-
-          <article class="tarjeta" id="startup-vacacionapp">
-            <p class="tarjeta-tag">Turismo · Mar del Plata</p>
-            <h3>VacacionApp</h3>
-            <p class="frase">Encontrá, compará y reservá lo mejor de la costa.</p>
-            <p class="problema"><strong>Problema:</strong> reservar servicios turísticos locales es informal y está disperso, y los prestadores no tienen un canal simple para ofrecerse.</p>
-            <div class="tarjeta-botones">
-              <a class="boton boton-primario" href="https://vacacionapp-beta.vercel.app">Ver app</a>
+          </header>
+          <p class="frase">Licitá tu obra y pagá por etapas, con fondos protegidos.</p>
+          <p class="problema"><strong>Problema:</strong> las PyMEs no tienen una forma ordenada y segura de licitar obras, y los contratistas no ven las oportunidades.</p>
+          <div class="tarjeta-botones"><a class="boton boton-primario" href="https://licity-five.vercel.app">Ver app<span class="sr-only"> de Licity</span></a></div>
+        </article>
+        <article class="tarjeta" id="startup-vacacionapp" style="--startup:#147e88;--sobre-startup:#ffffff">
+          <header class="tarjeta-cabecera">
+            <img class="logo-startup" src="logos/vacacionapp.webp" alt="" width="48" height="48" loading="lazy" decoding="async">
+            <div>
+              <p class="tarjeta-tag">Turismo · Mar del Plata</p>
+              <h3>VacacionApp</h3>
             </div>
-          </article>
-
-          <article class="tarjeta tarjeta-pendiente" id="startup-kiva">
-            <p class="tarjeta-tag">Turismo · Alojamientos</p>
-            <h3>KIVA</h3>
-            <p class="frase">Gestión simple para alojamientos turísticos chicos.</p>
-            <p class="problema"><strong>Problema:</strong> los alojamientos pequeños gestionan reservas, disponibilidad y cobros con planillas y mensajes sueltos.</p>
-            <div class="tarjeta-botones">
-              <span class="insignia">Próximamente</span>
+          </header>
+          <p class="frase">Encontrá, compará y reservá lo mejor de la costa.</p>
+          <p class="problema"><strong>Problema:</strong> reservar servicios turísticos locales es informal y está disperso, y los prestadores no tienen un canal simple para ofrecerse.</p>
+          <div class="tarjeta-botones"><a class="boton boton-primario" href="https://vacacionapp-beta.vercel.app">Ver app<span class="sr-only"> de VacacionApp</span></a></div>
+        </article>
+        <article class="tarjeta tarjeta-pendiente" id="startup-kiva" style="--startup:#1f3a5f;--sobre-startup:#ffffff">
+          <header class="tarjeta-cabecera">
+            <img class="logo-startup" src="logos/kiva-mark.svg" alt="" width="48" height="48" loading="lazy" decoding="async">
+            <div>
+              <p class="tarjeta-tag">Turismo · Alojamientos</p>
+              <h3>KIVA</h3>
             </div>
-          </article>
-
+          </header>
+          <p class="frase">Gestión simple para alojamientos turísticos chicos.</p>
+          <p class="problema"><strong>Problema:</strong> los alojamientos pequeños gestionan reservas, disponibilidad y cobros con planillas y mensajes sueltos.</p>
+          <div class="tarjeta-botones"><span class="insignia">Próximamente</span></div>
+        </article>
         </div>
       </div>
     </section>
@@ -139,24 +151,23 @@
       <div class="contenedor">
         <h2>Docentes</h2>
         <ul class="docentes">
-          <li>
-            <h3>Franco Vinciguerra</h3>
-            <p>Docente de Taller Emprendedor</p>
-          </li>
-          <li>
-            <h3>Luis Orviz Friser</h3>
-            <p>Docente de Taller Emprendedor</p>
-          </li>
+          <li><span class="avatar avatar-docente" aria-hidden="true"><span class="avatar-iniciales">FV</span></span><div><h3>Franco Vinciguerra</h3><p>Docente de Taller Emprendedor</p></div></li>
+          <li><span class="avatar avatar-docente" aria-hidden="true"><span class="avatar-iniciales">LO</span></span><div><h3>Luis Orviz Friser</h3><p>Docente de Taller Emprendedor</p></div></li>
         </ul>
       </div>
     </section>
   </main>
 
   <footer class="pie">
-    <div class="contenedor">
-      <p><strong>Taller Emprendedor</strong> · Universidad CAECE, Mar del Plata · 2do cuatrimestre 2026</p>
-      <p class="pie-aviso">Las apps son demos académicas con datos de ejemplo y no tienen fines comerciales. <a href="privacidad.html">Política de privacidad</a>.
-        </p>
+    <div class="contenedor pie-interno">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="logos/logo_caece.png">
+        <img src="logos/logo_caece2.png" alt="Universidad CAECE" width="130" height="38" loading="lazy">
+      </picture>
+      <div>
+        <p><strong>Taller Emprendedor</strong> · Sede Mar del Plata · 2do cuatrimestre 2026</p>
+        <p class="pie-aviso">Las apps son demos académicas con datos de ejemplo y no tienen fines comerciales. <a href="privacidad.html">Política de privacidad</a>.</p>
+      </div>
     </div>
   </footer>
 </body>
